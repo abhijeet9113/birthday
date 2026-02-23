@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN PAGE */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #ff4d6d;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+/* SURPRISE PAGE */
+.celebration {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff4d6d, #ff9a9e);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.cake-section {
+    position: relative;
+    top: 25%;
+}
+
+.cake {
+    font-size: 120px;
+    animation: bounce 2s infinite;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 40px;
+    animation: fadeIn 2s ease-in;
+}
+
+.hidden {
+    margin-top: 30px;
+    font-size: 22px;
+    opacity: 0;
+    animation: showMessage 3s forwards;
+    animation-delay: 3s;
+}
+
+/* Confetti */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    animation: fall 4s linear infinite;
+}
+
+@keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes showMessage {
+    to {opacity: 1;}
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
