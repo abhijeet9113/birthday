@@ -10,9 +10,32 @@
 
 <section class="hero">
     <h1>Happy Birthday My Love 💕</h1>
-    <p>You make my life beautiful every day ✨</p>
+    <p>You make my life brighter every day ✨</p>
     <button onclick="goToSurprise()">Click For Your Surprise 🎁</button>
 </section>
+
+<section class="memories">
+    <h2>Our Memories 📸</h2>
+    <div class="gallery">
+        <div class="photo-card" onclick="openPopup('photo1.jpg')">
+            <img src="photo1.jpg" alt="Memory 1">
+        </div>
+        <div class="photo-card" onclick="openPopup('photo2.jpg')">
+            <img src="photo2.jpg" alt="Memory 2">
+        </div>
+        <div class="photo-card" onclick="openPopup('photo3.jpg')">
+            <img src="photo3.jpg" alt="Memory 3">
+        </div>
+        <div class="photo-card" onclick="openPopup('photo4.jpg')">
+            <img src="photo4.jpg" alt="Memory 4">
+        </div>
+    </div>
+</section>
+
+<!-- Popup for Enlarged Photo -->
+<div id="popup" class="popup" onclick="closePopup()">
+    <img id="popupImg">
+</div>
 
 <script src="script.js"></script>
 </body>
